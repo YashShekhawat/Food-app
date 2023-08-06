@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* .header {
+    display: flex;
+}
+
+.logoimg {
+    width: 10vw;
+}
+
+.list {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    margin: 0rem 1rem;
+}
+
+.nav-items {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.card-container {
+    margin: 20px;
+    padding: 10px;
+    width: 250px;
+    background: #e2e9e9;
+}
+
+.res-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.shimmer-container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-cards {
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    height: 300px;
+    background: #f0f0f0;
+}
+
+.filter {
+    display: flex;
+    margin: 20px;
+} */
+
+:root {
+    --duration: 1s;
+    --easing: linear;
+    --delay: 0s;
+}
+
+.tailwind-style {
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 1rem;
+    padding: 5px 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(39, 40, 41);
+}
+
+@keyframes shine {
+
+    20%,
+    100% {
+        transform: translateX(150%);
+    }
+}
+
+.shine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    background-image: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 25%,
+            rgba(255, 255, 255, .5) 50%,
+            rgba(255, 255, 255, 0) 75%);
+    transform: skewX(-20deg) translateX(-100%);
+    animation: var(--duration) var(--easing) var(--delay) infinite forwards shine;
+}
