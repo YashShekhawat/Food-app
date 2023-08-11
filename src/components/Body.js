@@ -29,7 +29,7 @@ const Body = () => {
 
             const json = await data.json();
 
-            console.log("resdata",json.data);
+            console.log("resdata", json.data);
 
             // setlistofRestaurant(json?.data?.cards[2]?.data?.data?.cards);
             // console.log("dasdad", json.data.success.cards[1].gridWidget.gridElements.infoWithStyle.restaurants);
