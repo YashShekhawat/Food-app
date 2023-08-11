@@ -25,7 +25,7 @@ const Body = () => {
 
     const fetchData = async () => {
         try {
-            const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.2704628&lng=72.8709166&page_type=DESKTOP_WEB_LISTING");
+            const data = await fetch("https://corsproxy.io/?https%3A%2F%2Fwww.swiggy.com%2Fdapi%2Frestaurants%2Flist%2Fv5%3Flat%3D19.2704628%26lng%3D72.8709166%26page_type%3DDESKTOP_WEB_LISTING");
 
             const json = await data.json();
 
@@ -62,15 +62,15 @@ const Body = () => {
             <div className='filter flex justify-center p-5'>
                 <div className="search">
 
-                    <input type="text" placeholder="Search" className=" border-l-gray-900 px-4 py-2 bg-slate-200" value={searchText}
+                    <input type="text" placeholder="Search" className=" rounded-lg mr-0.5 border-l-gray-900 px-4 py-2 bg-slate-200" value={searchText}
                         onChange={(e) => { setSearchText(e.target.value) }} />
 
-                    <button className=" px-4 py-2 bg-blue-400"
+                    <button className=" px-4 py-2 bg-blue-600 text-white font-medium rounded-lg"
                         onClick={() => {
                             const filteredRestaurant = listofRestaurant.filter(
                                 (res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
                             setFilteredRestaurant(filteredRestaurant);
-                        }}>submit</button>
+                        }}>Submit</button>
 
                 </div>
                 {/* <button className="filter-btn"

@@ -20,11 +20,6 @@ const RestaurantDetails = () => {
 
     return (
         <div>
-            {/* <h1>restaurant id: {name}</h1>
-            <h1>restaurant area: {restaurant.areaName}</h1>
-            <h1>restaurant name: {restaurant.name}</h1>
-            <h1>restaurant name: {cuisines.join(", ")} - {costForTwoMessage}</h1>
-            <img src={CDN_URL + restaurant.cloudinaryImageId} alt="" /> */}
             <div>
 
                 <ul className="flex flex-col justify-center items-center ">
@@ -64,11 +59,6 @@ const RestaurantDetails = () => {
 
 export default RestaurantDetails;
 
-
-
-
-// Im calling this function inside useEffect but sometimes my menu is being set to undefined even though the data for the given optional chain is available, If I reload twice or thrice then sometimes the menu appears
-// Restaurant is always loaded
 
 
 
