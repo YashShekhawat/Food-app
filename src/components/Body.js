@@ -41,8 +41,6 @@ const Body = () => {
             console.log(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle.restaurants);
         } catch (error) {
             console.log(error);
-
-
         }
 
     }
@@ -73,25 +71,6 @@ const Body = () => {
                         }}>Submit</button>
 
                 </div>
-                {/* <button className="filter-btn"
-                    onClick={() => {
-                        const filterredList = listofRestaurant.filter(
-                            (res) => res.info.avgRating > 3
-                        );
-                        setlistofRestaurant(filterredList);
-                    }}
-                >
-                    Filter button
-                </button> */}
-
-                {/* <button className="clr-btn"
-                    onClick={() => {
-                        resList.map((restaurant) => <RestaurantCard key={restaurant.data.id} resData={restaurant} />);
-                        setlistofRestaurant(resList);
-                    }}
-                >
-                    clear button
-                </button> */}
             </div>
             <div className='flex justify-center flex-wrap'>
                 {filteredRestaurant.map((restaurant) =>
