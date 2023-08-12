@@ -57,7 +57,7 @@ const appRouter = createBrowserRouter([
 
 
 const Main = () => {
-  const mobile = window.matchMedia('(max-width: 1024px)').matches;
+  const mobile = window.matchMedia('(max-width: 768px)').matches;
   return mobile ? <DesktopMessage /> : <RouterProvider router={appRouter} />
 }
 
