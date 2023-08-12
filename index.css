@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 
-
-
 /* .header {
     display: flex;
 }
@@ -61,10 +59,42 @@ li {
     margin: 20px;
 } */
 
+/* styles.css */
+/* Apply light theme by default */
+@media (prefers-color-scheme: light) {
+
+    /* Override dark theme styles */
+    body {
+        background-color: #ffffff;
+        /* Set background color to white */
+        color: #000000;
+        /* Set text color to black */
+    }
+}
+
+/* Override dark theme */
+@media (prefers-color-scheme: dark) {
+    /* Reset any dark theme styles here, or leave empty if not needed */
+}
+
+
 :root {
     --duration: 1s;
     --easing: linear;
     --delay: 0s;
+}
+
+.desktop-message {
+    display: none;
+    /* Hide by default on larger screens */
+}
+
+@media (max-width: 768px) {
+    .desktop-message {
+        display: block;
+        /* Show on screens with maximum width of 768px (typical mobile screens) */
+        /* Add additional styling here if needed */
+    }
 }
 
 .tailwind-style {

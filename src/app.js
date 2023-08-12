@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Contact from './components/Contact';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import RestaurantDetails from './components/RestaurantDetails';
+import DesktopMessage from './components/DesktopMessage';
 
 
 const About = lazy(() => import('./components/About'));
@@ -54,8 +55,15 @@ const appRouter = createBrowserRouter([
   }
 ])
 
+
+const Main = () => {
+  const mobile = window.matchMedia('(max-width: 1024px)').matches;
+  return mobile ? <DesktopMessage /> : <RouterProvider router={appRouter} />
+}
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
-root.render(<RouterProvider router={appRouter} />);
+root.render(<Main />);
 
