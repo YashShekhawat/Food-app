@@ -1,63 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@900&family=Manrope:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-/* .header {
-    display: flex;
-}
-
-.logoimg {
-    width: 10vw;
-}
-
-.list {
-    display: flex;
-}
-
-li {
-    list-style-type: none;
-    margin: 0rem 1rem;
-}
-
-.nav-items {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.card-container {
-    margin: 20px;
-    padding: 10px;
-    width: 250px;
-    background: #e2e9e9;
-}
-
-.res-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.shimmer-container {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.shimmer-cards {
-    width: 200px;
-    margin: 20px;
-    padding: 10px;
-    height: 300px;
-    background: #f0f0f0;
-}
-
-.filter {
-    display: flex;
-    margin: 20px;
-} */
 
 /* styles.css */
 /* Apply light theme by default */
@@ -75,6 +20,35 @@ li {
 /* Override dark theme */
 @media (prefers-color-scheme: dark) {
     /* Reset any dark theme styles here, or leave empty if not needed */
+}
+
+
+body {
+    background-color: #ffffff;
+}
+
+.hello {
+    background: linear-gradient(rgba(27, 30, 36, 0) 0%, rgb(27, 30, 36) 84.21%);
+    height: calc(81px);
+    top: 75px;
+    position: absolute;
+    width: -webkit-fill-available;
+}
+
+#limited-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    /* Optional: Adjust the width as needed */
+}
+
+
+.specialText {
+    font-size: 20px;
+    font-family: 'Figtree', sans-serif;
+    position: relative;
+    top: 15px;
 }
 
 

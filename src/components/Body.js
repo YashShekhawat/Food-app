@@ -76,7 +76,7 @@ const Body = () => {
                 {filteredRestaurant.map((restaurant) =>
                     <Link key={restaurant?.info?.id} to={"/restaurant/" + restaurant?.info?.id}>
                         {/* <RestaurantCard resData={restaurant} /> */}
-                        {restaurant.info.aggregatedDiscountInfoV3 ? <RestaurantCardPromoted resData={restaurant} /> : <RestaurantCard resData={restaurant} />}
+                        {restaurant.info.avgRating > 4 ? <RestaurantCardPromoted resData={restaurant} /> : <RestaurantCard resData={restaurant} />}
                     </Link>)}
                 {/* {filteredRestaurant.map((restaurant) => <RestaurantCard resData={restaurant} />)} */}
             </div>
