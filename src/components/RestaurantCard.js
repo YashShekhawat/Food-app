@@ -7,20 +7,6 @@ const RestaurantCard = (props) => {
 
     return (
         <div className="m-3 w-80 p-8 bg-gray-50 drop-shadow-lg hover:bg-gray-200 rounded-2xl">
-            {/* <div className=''>
-                <img className="rounded-md h-36 w-64" src={CDN_URL + cloudinaryImageId}
-                    alt="" />
-            </div> */}
-
-            {/* <div className="relative">
-                <img className="rounded-md h-36 w-64" src={CDN_URL + cloudinaryImageId}
-                    alt="" />
-                <div className="hello absolute w-24 z-10 mb-10">
-                </div>
-                <h2 className="absolute text-xl text-amber-400 bottom-4 left-1/2 -translate-x-1/2">Bottom</h2>
-            </div> */}
-
-
             <div className="relative cursor-pointer">
                 <a href="#">
                     <img className="rounded-2xl h-36 w-80 object-cover" src={CDN_URL + cloudinaryImageId}
@@ -32,8 +18,6 @@ const RestaurantCard = (props) => {
                 <div className="hello rounded-2xl absolute w-24 mb-10 ">
                 </div>
             </div>
-
-
 
             <div className='info'>
                 <h4 className="font-sans text-xl font-bold mt-6">{name}</h4>
@@ -48,7 +32,7 @@ const RestaurantCard = (props) => {
                     <div>
                     </div>
                 </div>
-                <button type="button" className=" mt-5 text-gray-600 bg-white hover:text-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <button type="button" className=" mt-5 text-white bg-blue-500 hover:text-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1.5 text-center inline-flex items-center">
                     Browse Menu
                     <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -59,12 +43,11 @@ const RestaurantCard = (props) => {
     )
 }
 
-
 export const withPromotedLabel = (RestaurantCard) => {
     return (props) => {
         return (
             <>
-                <button className="tailwind-style">Top Rated
+                <button className="tailwind-style font-sans">Top Rated
                     <span className="shine"></span>
                 </button>
                 <RestaurantCard {...props} />
