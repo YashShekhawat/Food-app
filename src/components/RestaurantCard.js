@@ -13,7 +13,7 @@ const RestaurantCard = (props) => {
                         alt="" />
                 </a>
                 <figcaption className="absolute z-10 px-3 text-lg text-white bottom-3">
-                    <p className="font-bold inline-block specialText z-10">{resData?.info.aggregatedDiscountInfoV3?.header} {resData?.info.aggregatedDiscountInfoV3.subHeader}</p>
+                    <p className="font-bold inline-block specialText z-10">{resData?.info.aggregatedDiscountInfoV3?.header} {resData?.info?.aggregatedDiscountInfoV3?.subHeader}</p>
                 </figcaption>
                 <div className="hello rounded-2xl absolute w-24 mb-10 ">
                 </div>

@@ -41,3 +41,21 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+//interview question
+/* 
+1. todo list
+2. fetch data from API
+3. forms
+4. nested filters
+5. caousels
+6. hooks
+7. searching sorting
+8. infinite scroll
+9. higher order components
+10. debouncing
+11. tik tak toe
+
+*/
